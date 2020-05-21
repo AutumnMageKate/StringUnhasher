@@ -11,6 +11,11 @@
 		44F5EDBC24771F8600A01B04 /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5EDBB24771F8600A01B04 /* StringExtensionsTests.swift */; };
 		44F5EDC224771FEE00A01B04 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5EDC124771FEE00A01B04 /* StringExtensions.swift */; };
 		44F5EDC324771FEE00A01B04 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5EDC124771FEE00A01B04 /* StringExtensions.swift */; };
+		44F5EDC52477239C00A01B04 /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5EDC42477239C00A01B04 /* CollectionExtensions.swift */; };
+		44F5EDC62477239C00A01B04 /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5EDC42477239C00A01B04 /* CollectionExtensions.swift */; };
+		44F5EDC82477263900A01B04 /* StringFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5EDC72477263900A01B04 /* StringFinder.swift */; };
+		44F5EDC92477263900A01B04 /* StringFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5EDC72477263900A01B04 /* StringFinder.swift */; };
+		44F5EDCB2477274A00A01B04 /* StringFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5EDCA2477274A00A01B04 /* StringFinderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +37,9 @@
 		44F5EDBB24771F8600A01B04 /* StringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
 		44F5EDBD24771F8600A01B04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44F5EDC124771FEE00A01B04 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		44F5EDC42477239C00A01B04 /* CollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensions.swift; sourceTree = "<group>"; };
+		44F5EDC72477263900A01B04 /* StringFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFinder.swift; sourceTree = "<group>"; };
+		44F5EDCA2477274A00A01B04 /* StringFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFinderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +81,10 @@
 		44AA091124771D1500A838E0 /* StringUnhasher */ = {
 			isa = PBXGroup;
 			children = (
+				44F5EDC42477239C00A01B04 /* CollectionExtensions.swift */,
 				44AA091224771D1500A838E0 /* main.swift */,
 				44F5EDC124771FEE00A01B04 /* StringExtensions.swift */,
+				44F5EDC72477263900A01B04 /* StringFinder.swift */,
 			);
 			path = StringUnhasher;
 			sourceTree = "<group>";
@@ -82,8 +92,9 @@
 		44F5EDBA24771F8600A01B04 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				44F5EDBB24771F8600A01B04 /* StringExtensionsTests.swift */,
 				44F5EDBD24771F8600A01B04 /* Info.plist */,
+				44F5EDBB24771F8600A01B04 /* StringExtensionsTests.swift */,
+				44F5EDCA2477274A00A01B04 /* StringFinderTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -177,7 +188,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F5EDC82477263900A01B04 /* StringFinder.swift in Sources */,
 				44AA091324771D1500A838E0 /* main.swift in Sources */,
+				44F5EDC52477239C00A01B04 /* CollectionExtensions.swift in Sources */,
 				44F5EDC224771FEE00A01B04 /* StringExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,7 +199,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F5EDC92477263900A01B04 /* StringFinder.swift in Sources */,
+				44F5EDCB2477274A00A01B04 /* StringFinderTests.swift in Sources */,
 				44F5EDBC24771F8600A01B04 /* StringExtensionsTests.swift in Sources */,
+				44F5EDC62477239C00A01B04 /* CollectionExtensions.swift in Sources */,
 				44F5EDC324771FEE00A01B04 /* StringExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
