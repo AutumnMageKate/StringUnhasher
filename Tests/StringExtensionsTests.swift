@@ -1,6 +1,6 @@
 import XCTest
 
-class ExtensionsTests: XCTestCase {
+class StringExtensionsTests: XCTestCase {
 
     func testHash() {
         XCTAssertEqual("a".hashCode, Int32(97))
