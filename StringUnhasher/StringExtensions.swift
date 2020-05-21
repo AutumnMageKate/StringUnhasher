@@ -15,3 +15,11 @@ extension String {
         return runningHash
     }
 }
+
+// Adapted from https://stackoverflow.com/questions/34540185/how-to-convert-index-to-type-int-in-swift
+
+extension String.Index {
+    func distance<S: StringProtocol>(in string: S) -> Int {
+        string.distance(from: self, to: self)
+    }
+}

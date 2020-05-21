@@ -13,14 +13,14 @@ let both = lowercase + uppercase
 
 // This is super inefficient memory-wise
 
-var stringsToCheck = [""]
-var stop = false
-
-repeat {
-    let candidate = stringsToCheck.removeFirst()
-    if candidate.hashCode == hashCode {
-        print(candidate)
-    }
-    stringsToCheck.append(contentsOf: StringFinder.nextStrings(for: candidate, availableCharacters: both))
-    stop = candidate.count > 4
-} while (!stop)
+//var stringsToCheck = [""]
+//var stop = false
+//
+//repeat {
+//    let candidate = stringsToCheck.removeFirst()
+//    if candidate.hashCode == hashCode {
+//        print(candidate)
+//    }
+//    stringsToCheck.append(contentsOf: StringFinder.nextStrings(for: candidate, availableCharacters: both))
+//    stop = candidate.count > 4
+//} while (!stop)
