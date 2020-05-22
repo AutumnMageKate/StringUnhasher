@@ -30,11 +30,16 @@ let both = lowercase + uppercase
 
 var candidate = ""
 var stop = false
+var lastCandidateCount = 0
 
 repeat {
     if candidate.hashCode == hashCode {
         print(candidate)
     }
-    candidate = StringFinder.nextString(for: candidate, availableCharacters: both)
-    stop = candidate.count > 4
+    candidate = StringFinder.nextString(for: candidate, availableCharacters: lowercase)
+    if candidate.count != lastCandidateCount {
+        lastCandidateCount = candidate.count
+        print("(\(lastCandidateCount) characters)")
+    }
+    stop = candidate.count > 10
 } while (!stop)
