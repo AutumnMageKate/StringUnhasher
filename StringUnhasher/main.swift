@@ -24,3 +24,17 @@ let both = lowercase + uppercase
 //    stringsToCheck.append(contentsOf: StringFinder.nextStrings(for: candidate, availableCharacters: both))
 //    stop = candidate.count > 4
 //} while (!stop)
+
+
+// Better memory-wise but still slow because it's brute forcing
+
+var candidate = ""
+var stop = false
+
+repeat {
+    if candidate.hashCode == hashCode {
+        print(candidate)
+    }
+    candidate = StringFinder.nextString(for: candidate, availableCharacters: both)
+    stop = candidate.count > 4
+} while (!stop)
